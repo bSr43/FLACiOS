@@ -913,15 +913,24 @@
 		FE271E0E15C706CB00B29E74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_ENUM_CONVERSION = NO;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/FLACiOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLACiOS/FLACiOS-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT = NO;
 				HEADER_SEARCH_PATHS = (
 					/opt/local/include,
 					"\"${SRCROOT}/libFlac/include\"",
+				);
+				OTHER_CFLAGS = (
+					"-Wno-tautological-constant-out-of-range-compare",
+					"-Wno-unreachable-code-loop-increment",
+					"-Wno-sizeof-pointer-memaccess",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -934,15 +943,24 @@
 		FE271E0F15C706CB00B29E74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_ENUM_CONVERSION = NO;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/FLACiOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLACiOS/FLACiOS-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT = NO;
 				HEADER_SEARCH_PATHS = (
 					/opt/local/include,
 					"\"${SRCROOT}/libFlac/include\"",
+				);
+				OTHER_CFLAGS = (
+					"-Wno-tautological-constant-out-of-range-compare",
+					"-Wno-unreachable-code-loop-increment",
+					"-Wno-sizeof-pointer-memaccess",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
